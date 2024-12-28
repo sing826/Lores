@@ -1,17 +1,27 @@
 {
   "version": 2,
-  "name": "Lores",
   "builds": [
-    { "src": "untitled.html", "use": "@vercel/static" },
-    { "src": "theme.css", "use": "@vercel/static" },
-    { "src": "scripting.js", "use": "@vercel/static" },
-    { "src": "Runes/*", "use": "@vercel/static" }
+    {
+      "src": "untitled.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.js",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.png",
+      "use": "@vercel/static"
+    }
   ],
   "routes": [
-    { "src": "/", "dest": "/untitled.html" },
-    { "src": "/Runes/(.*)", "dest": "/Runes/$1" },
-    { "src": "/(.*).css", "dest": "/$1.css" },
-    { "src": "/(.*).js", "dest": "/$1.js" },
-    { "src": "/(.*).png", "dest": "/$1.png" }
+    {
+      "src": "/(.*)",
+      "dest": "/untitled.html"
+    }
   ]
 }
