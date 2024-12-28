@@ -2,39 +2,30 @@
   "version": 2,
   "name": "Lores",
   "builds": [
-    {
-      "src": "untitled.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "theme.css",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "scripting.js",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "Runes/*",
-      "use": "@vercel/static"
-    }
+    { "src": "Lores/untitled.html", "use": "@vercel/static" },
+    { "src": "Lores/theme.css", "use": "@vercel/static" },
+    { "src": "Lores/scripting.js", "use": "@vercel/static" },
+    { "src": "Lores/settings.png", "use": "@vercel/static" },
+    { "src": "Lores/Runes/Cosmic.png", "use": "@vercel/static" },
+    { "src": "Lores/Runes/Darkness.png", "use": "@vercel/static" },
+    { "src": "Lores/Runes/Earth.png", "use": "@vercel/static" },
+    { "src": "Lores/Runes/Fire.png", "use": "@vercel/static" },
+    { "src": "Lores/Runes/Ice.png", "use": "@vercel/static" },
+    { "src": "Lores/Runes/Immaterial.png", "use": "@vercel/static" },
+    { "src": "Lores/Runes/Light.png", "use": "@vercel/static" },
+    { "src": "Lores/Runes/Nature.png", "use": "@vercel/static" },
+    { "src": "Lores/Runes/Neutral.png", "use": "@vercel/static" },
+    { "src": "Lores/Runes/Profane.png", "use": "@vercel/static" },
+    { "src": "Lores/Runes/Thunder.png", "use": "@vercel/static" },
+    { "src": "Lores/Runes/Time.png", "use": "@vercel/static" },
+    { "src": "Lores/Runes/Water.png", "use": "@vercel/static" },
+    { "src": "Lores/Runes/Wind.png", "use": "@vercel/static" }
   ],
   "routes": [
-    {
-      "src": "/",
-      "dest": "/untitled.html"
-    },
-    {
-      "src": "/Runes/(.*)",
-      "dest": "/Runes/$1"
-    },
-    {
-      "src": "/(.*).css",
-      "dest": "/$1.css"
-    },
-    {
-      "src": "/(.*).js",
-      "dest": "/$1.js"
-    }
+    { "src": "/", "dest": "/Lores/untitled.html" },
+    { "src": "/Runes/(.*)", "dest": "/Lores/Runes/$1" },
+    { "src": "/(.*).css", "dest": "/Lores/$1.css" },
+    { "src": "/(.*).js", "dest": "/Lores/$1.js" },
+    { "src": "/(.*).png", "dest": "/Lores/$1.png" }
   ]
 }
