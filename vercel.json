@@ -2,147 +2,16 @@
   "version": 2,
   "name": "Lores",
   "builds": [
-    {
-      "src": "untitled.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "theme.css",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "scripting.js",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "Runes/Cosmic.png",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "Runes/Darkness.png",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "Runes/Earth.png",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "Runes/Fire.png",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "Runes/Ice.png",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "Runes/Immaterial.png",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "Runes/Light.png",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "Runes/Nature.png",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "Runes/Neutral.png",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "Runes/Profane.png",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "Runes/Thunder.png",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "Runes/Time.png",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "Runes/Water.png",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "Runes/Wind.png",
-      "use": "@vercel/static"
-    }
+    { "src": "untitled.html", "use": "@vercel/static" },
+    { "src": "theme.css", "use": "@vercel/static" },
+    { "src": "scripting.js", "use": "@vercel/static" },
+    { "src": "Runes/*", "use": "@vercel/static" }
   ],
   "routes": [
-    {
-      "src": "/",
-      "dest": "/untitled.html"
-    },
-    {
-      "src": "/Runes/(.*)",
-      "dest": "/Runes/$1"
-    },
-    {
-      "src": "/(.*).css",
-      "dest": "/$1.css"
-    },
-    {
-      "src": "/(.*).js",
-      "dest": "/$1.js"
-    },
-    {
-      "src": "/Runes/Cosmic.png",
-      "dest": "/Runes/Cosmic.png"
-    },
-    {
-      "src": "/Runes/Darkness.png",
-      "dest": "/Runes/Darkness.png"
-    },
-    {
-      "src": "/Runes/Earth.png",
-      "dest": "/Runes/Earth.png"
-    },
-    {
-      "src": "/Runes/Fire.png",
-      "dest": "/Runes/Fire.png"
-    },
-    {
-      "src": "/Runes/Ice.png",
-      "dest": "/Runes/Ice.png"
-    },
-    {
-      "src": "/Runes/Immaterial.png",
-      "dest": "/Runes/Immaterial.png"
-    },
-    {
-      "src": "/Runes/Light.png",
-      "dest": "/Runes/Light.png"
-    },
-    {
-      "src": "/Runes/Nature.png",
-      "dest": "/Runes/Nature.png"
-    },
-    {
-      "src": "/Runes/Neutral.png",
-      "dest": "/Runes/Neutral.png"
-    },
-    {
-      "src": "/Runes/Profane.png",
-      "dest": "/Runes/Profane.png"
-    },
-    {
-      "src": "/Runes/Thunder.png",
-      "dest": "/Runes/Thunder.png"
-    },
-    {
-      "src": "/Runes/Time.png",
-      "dest": "/Runes/Time.png"
-    },
-    {
-      "src": "/Runes/Water.png",
-      "dest": "/Runes/Water.png"
-    },
-    {
-      "src": "/Runes/Wind.png",
-      "dest": "/Runes/Wind.png"
-    }
+    { "src": "/", "dest": "/untitled.html" },
+    { "src": "/Runes/(.*)", "dest": "/Runes/$1" },
+    { "src": "/(.*).css", "dest": "/$1.css" },
+    { "src": "/(.*).js", "dest": "/$1.js" },
+    { "src": "/(.*).png", "dest": "/$1.png" }
   ]
 }
