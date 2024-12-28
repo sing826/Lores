@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "name": "Lores",
+  "builds": [
+    {
+      "src": "untitled.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/untitled.html"
+    }
+  ]
+}
