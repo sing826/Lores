@@ -82,6 +82,18 @@
       "dest": "/untitled.html"
     },
     {
+      "src": "/",
+      "dest": "/theme.css"
+    },
+    {
+      "src": "/",
+      "dest": "/scripting.js"
+    },
+    {
+      "src": "/",
+      "dest": "/settings.png"
+    },
+    {
       "src": "/Runes/(.*)",
       "dest": "/Runes/$1"
     },
@@ -93,10 +105,7 @@
       "src": "/(.*).js",
       "dest": "/$1.js"
     },
-    {
-      "src": "/",
-      "dest": "/settings.png"
-    },
+  
     {
       "src": "/Runes/Cosmic.png",
       "dest": "/Runes/Cosmic.png"
